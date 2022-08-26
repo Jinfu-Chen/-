@@ -1,9 +1,98 @@
 <view class="title1">入微网络科技工作室纳新</view>
-<view style="width: 100rpx; background-color: #262626;">1</view>
-<view style="width: 100rpx; background-color: #595959;">2</view>
-<view style="width: 100rpx; background-color: #e3e3e3;">3</view>
-<view style="width: 100rpx; background-color: #bebebe;">4</view>
 <view class="body">
-  <text>Tips：提交问卷后即可获得训练营QQ群二维码！不要忘记扫码进群哦~</text>
-  
+  <text style="font-weight:300; display:inline-block;margin-bottom: 40rpx;">Tips：提交问卷后即可获得训练营QQ群二维码！不要忘记扫码进群哦~</text>
+  <van-divider dashed borderColor="#bebebe" />
+  <view class="container1">
+    <text style="color: red;">*</text><text class="title3">1.您的姓名</text>
+    <view class="inputBox">
+      <van-icon name="manager" color="#bebebe" />
+      <input type="text" />
+    </view>
+  </view>
+  <view class="container1">
+    <text style="color: red;">*</text><text class="title3">2.您的性别</text>
+    <view class="inputBox">
+      <van-radio-group value="{{ radio }}" direction="horizontal" bind:change="onChange">
+        <van-radio name="男" custom-class="option">男</van-radio>
+        <view class="shuXian"></view>
+        <van-radio name="女">女</van-radio>
+      </van-radio-group>
+    </view>
+  </view>
+  <view class="container1">
+    <text style="color: red;">*</text><text class="title3">3.您的年级</text>
+    <view class="inputBox">
+      <input type="text" />
+    </view>
+  </view>
+  <view class="container1">
+    <text style="color: red;">*</text><text class="title3">4.您的专业</text>
+    <view class="inputBox">
+      <input type="text" />
+    </view>
+  </view>
+  <view class="container1">
+    <text style="color: red;">*</text><text class="title3">5.是否接触过微信小程序开发</text>
+    <van-radio-group value="{{ radio }}" bind:change="onChange">
+      <view class="chooseBox" style="margin-top:30rpx">
+        <van-radio name="是">是</van-radio>
+      </view>
+      <view class="chooseBox" style="border-top:0;">
+        <van-radio name="否">否</van-radio>
+      </view>
+    </van-radio-group>
+  </view>
+  <view class="container1">
+    <text style="color: red;">*</text><text class="title3">6.是否接触过web开发</text>
+    <van-radio-group value="{{ radio }}" bind:change="onChange">
+      <view class="chooseBox" style="margin-top:30rpx">
+        <van-radio name="是">是</van-radio>
+      </view>
+      <view class="chooseBox" style="border-top:0;">
+        <van-radio name="否">否</van-radio>
+      </view>
+    </van-radio-group>
+  </view>
+  <view class="container1">
+    <text style="color: red;">*</text><text class="title3">7.是否具有手绘基础</text>
+    <van-radio-group value="{{ radio }}" bind:change="onChange">
+      <view class="chooseBox" style="margin-top:30rpx">
+        <van-radio name="是">是</van-radio>
+      </view>
+      <view class="chooseBox" style="border-top:0;">
+        <van-radio name="否">否</van-radio>
+      </view>
+    </van-radio-group>
+  </view>
+  <view class="container1">
+    <text style="color: red;">*</text><text class="title3">8.是否具有视频制作基础</text>
+    <van-radio-group value="{{ radio }}" bind:change="onChange">
+      <view class="chooseBox" style="margin-top:30rpx">
+        <van-radio name="是">是</van-radio>
+      </view>
+      <view class="chooseBox" style="border-top:0;">
+        <van-radio name="否">否</van-radio>
+      </view>
+    </van-radio-group>
+  </view>
+  <view class="container1">
+    <text style="color: red;">*</text><text class="title3">9.是否具有PS/AI基础</text>
+    <van-radio-group value="{{ radio }}" bind:change="onChange">
+      <view class="chooseBox" style="margin-top:30rpx">
+        <van-radio name="是">是</van-radio>
+      </view>
+      <view class="chooseBox" style="border-top:0;">
+        <van-radio name="否">否</van-radio>
+      </view>
+    </van-radio-group>
+  </view>
+  <button class="submitButton">提交</button>
+</view>
+<view class="tail">
+  <view class="left">
+    <van-icon name="star-o" class="rgb(139, 139, 139)" />
+    <text style="color: rgb(140, 140, 140);">问卷星 </text>
+    <text style="color: rgb(190, 190, 190); margin-left: 10rpx;">提供技术支持</text>
+  </view>
+  <text style="color: rgb(125, 125, 125);">举报</text>
 </view>

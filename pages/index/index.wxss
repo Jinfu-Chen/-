@@ -7,3 +7,56 @@
 .body{
   padding:40rpx 40rpx;
 }
+.title3{
+  font-size: 34rpx;
+  margin-top:30rpx;
+}
+.container1{
+  margin-top: 80rpx;
+}
+.inputBox{
+  display: flex;
+  align-items: center;
+  border: #e3e3e3 solid 2rpx;
+  height: 90rpx;
+  padding: 0 20rpx;
+  margin: 30rpx 0;
+}
+
+.inputBox input{
+  margin-left: 20rpx;
+  width: 600rpx;
+}
+.option {
+  width: 270rpx;
+}
+.shuXian{
+  display: inline-block;
+  width: 2rpx;
+  background-color: #e3e3e3;
+  margin-right: 20rpx;
+}
+.chooseBox{
+  display: flex;
+  align-items: center;
+  border: #e3e3e3 solid 2rpx;
+  height: 90rpx;
+  padding: 0 20rpx;
+}
+.submitButton{
+  margin-top: 80rpx;
+  color: #fff;
+  background-color: #0095ff;
+}
+
+.tail{
+  display: flex;
+  align-items: center;
+  height: 100rpx;
+  background-color: rgba(249, 249, 249);
+}
+.left{
+  width: 88%;
+  display: flex;
+  justify-content: center;
+}
